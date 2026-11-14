@@ -1,0 +1,212 @@
+[
+  {
+    "s": 0,
+    "ref": "Mc 13,33",
+    "q": "Đức Giêsu kêu gọi anh em phải coi chừng, phải làm gì vì anh em không biết khi nào thời ấy đến?",
+    "o": ["Cầu nguyện", "Tỉnh thức", "Tránh xa tội lỗi", "Tránh xa biệt phái"],
+    "a": 1
+  },
+  {
+    "s": 0,
+    "ref": "Mc 13,34",
+    "q": "Ông chủ trẩy đi đâu, để lại nhà trao quyền cho các đầy tớ của mình?",
+    "o": ["Dự tiệc cưới", "Hành hương", "Phương xa", "Yết kiến hoàng đế để được phong vương"],
+    "a": 2
+  },
+  {
+    "s": 0,
+    "ref": "Mc 13,34",
+    "q": "Khi người chủ trẩy đi phương xa, để lại nhà, trao quyền cho ai?",
+    "o": ["Các môn đệ", "Các đầy tớ", "Các tá điền", "Các tư tế"],
+    "a": 1
+  },
+  {
+    "s": 0,
+    "ref": "Mc 13,35",
+    "q": "Chủ nhà có thể đến vào những lúc nào?",
+    "o": ["Nửa đêm", "Rạng sáng", "Lúc chập tối", "Cả ba lúc trên đều đúng"],
+    "a": 3
+  },
+  {
+    "s": 0,
+    "ref": "Mc 13,35",
+    "q": "Anh em phải làm gì vì anh em không biết khi nào chủ nhà đến?",
+    "o": ["Cầu nguyện", "Canh thức", "Lo lắng", "Sẵn sàng"],
+    "a": 1
+  },
+  {
+    "s": 0,
+    "ref": "Mc 13,36",
+    "q": "Anh em phải canh thức, kẻo lỡ ra ông chủ đến bất thần, thấy anh em đang làm gì?",
+    "o": ["Làm việc", "Chè chén say sưa", "Ngủ", "Tỉnh thức"],
+    "a": 2
+  },
+  {
+    "s": 1,
+    "ref": "Mc 1,2",
+    "q": "“Này Ta sai sứ giả của Ta đi trước mặt Con, người sẽ dọn đường cho Con.” Đây là lời của ngôn sứ nào?",
+    "o": ["Ngôn sứ Isaia", "Ngôn sứ Giêrêmia", "Ngôn sứ Êdêkien", "Ngôn sứ Dacaria"],
+    "a": 0
+  },
+  {
+    "s": 1,
+    "ref": "Mc 1,4",
+    "q": "Ai xuất hiện trong hoang địa, rao giảng kêu gọi người ta chịu phép rửa tỏ lòng sám hối để được tha tội?",
+    "o": ["Đức Giêsu", "Ông Môsê", "Ông Phaolô", "Ông Gioan Tẩy Giả"],
+    "a": 3
+  },
+  {
+    "s": 1,
+    "ref": "Mc 1,5",
+    "q": "Ông Gioan làm phép rửa cho mọi người ở đâu?",
+    "o": ["Bên biển hồ Galilê", "Bên hồ Silôác", "Trong sông Êuphơrát", "Trong sông Giođan"],
+    "a": 3
+  },
+  {
+    "s": 1,
+    "ref": "Mc 1,6",
+    "q": "Thức ăn của ông Gioan Tẩy Giả là gì?",
+    "o": ["Mật ong rừng", "Châu chấu", "Thịt dê", "Mật ong rừng và châu chấu"],
+    "a": 3
+  },
+  {
+    "s": 1,
+    "ref": "Mc 1,5",
+    "q": "Những người thuộc miền nào đã đến với ông Gioan Tẩy Giả?",
+    "o": ["Miền Galilê", "Miền Samaria", "Miền Thập Tỉnh", "Miền Giuđê"],
+    "a": 3
+  },
+  {
+    "s": 1,
+    "ref": "Mc 1,5",
+    "q": "Những người thuộc thành nào kéo đến thú tội và xin ông Gioan làm phép rửa?",
+    "o": ["Thành Đamát", "Thành Nadarét", "Thành Giêrusalem", "Thành Caphácnaum"],
+    "a": 2
+  },
+  {
+    "s": 1,
+    "ref": "Mc 1,7-8",
+    "q": "Hoàn thành câu: “Tôi làm phép rửa cho anh em trong nước, còn Người, Người sẽ làm phép rửa cho anh em …”",
+    "o": ["Trong Thần Khí và Sự Thật", "Trong Thánh Thần", "Trong Thiên Chúa", "Trong nước và lửa"],
+    "a": 1
+  },
+  {
+    "s": 2,
+    "ref": "Ga 1,6-7",
+    "q": "Người được Thiên Chúa sai đến để làm chứng về ánh sáng là ai?",
+    "o": ["Đức Giêsu", "Ông Môsê", "Ông Ápraham", "Ông Gioan"],
+    "a": 3
+  },
+  {
+    "s": 2,
+    "ref": "Ga 1,7",
+    "q": "Ông Gioan được Thiên Chúa sai đến để làm gì?",
+    "o": ["Làm chứng về ánh sáng", "Rao giảng Nước Trời", "Kêu gọi mọi người sám hối và tin vào Tin Mừng", "Chỉ a và c đúng"],
+    "a": 0
+  },
+  {
+    "s": 2,
+    "ref": "Ga 1,19",
+    "q": "Những người từ Giêrusalem được cử đến hỏi ông Gioan là ai?",
+    "o": ["Các thượng tế", "Các thầy Lêvi", "Các tư tế", "Các thầy Lêvi và các tư tế"],
+    "a": 3
+  },
+  {
+    "s": 2,
+    "ref": "Ga 1,20",
+    "q": "Ông Gioan tuyên bố ông không phải là ai?",
+    "o": ["Con Thiên Chúa", "Đấng Kitô", "Tôi tớ trung thành của Thiên Chúa", "Thiên sứ của Thiên Chúa"],
+    "a": 1
+  },
+  {
+    "s": 2,
+    "ref": "Ga 1,28",
+    "q": "Ông Gioan đã làm phép rửa tại đâu?",
+    "o": ["Biển hồ Tibêria", "Sông Giođan", "Giếng Giacóp", "Hồ Silôác"],
+    "a": 1
+  },
+  {
+    "s": 2,
+    "ref": "Ga 1,23",
+    "q": "“Tôi là tiếng người hô trong hoang địa: hãy sửa đường cho thẳng để Đức Chúa đi.” Đây là lời của ngôn sứ nào?",
+    "o": ["Ngôn sứ Êdêkien", "Ngôn sứ Malakhi", "Ngôn sứ Isaia", "Ngôn sứ Dacaria"],
+    "a": 2
+  },
+  {
+    "s": 2,
+    "ref": "Ga 1,26-27",
+    "q": "Hoàn thành câu: “Có một vị đang ở giữa các ông mà các ông không biết. Người sẽ đến sau tôi và …”",
+    "o": ["Tôi chỉ là người tiền hô cho Người", "Tôi không đáng cởi quai dép cho Người", "Tôi đi trước Người", "Tôi chỉ chuẩn bị đường cho Người"],
+    "a": 1
+  },
+  {
+    "s": 3,
+    "ref": "Lc 1,26",
+    "q": "Bà Êlisabét có thai được mấy tháng thì Thiên Chúa sai sứ thần Gáprien truyền tin cho cô Maria?",
+    "o": ["Ba tháng", "Sáu tháng", "Chín tháng", "Mười hai tháng"],
+    "a": 1
+  },
+  {
+    "s": 3,
+    "ref": "Lc 1,26",
+    "q": "Sứ thần truyền tin cho Đức Maria tên là gì?",
+    "o": ["Sứ thần Gáprien", "Sứ thần Micaen", "Sứ thần Raphaen", "Sứ thần Kêrubim"],
+    "a": 0
+  },
+  {
+    "s": 3,
+    "ref": "Lc 1,27",
+    "q": "Người thiếu nữ được truyền tin tên là gì?",
+    "o": ["Cô Gioanna", "Cô Maria", "Cô Êlisabét", "Cô Anna"],
+    "a": 1
+  },
+  {
+    "s": 3,
+    "ref": "Lc 1,27",
+    "q": "Trinh nữ Maria cư ngụ nơi thành nào?",
+    "o": ["Thành Giêrusalem", "Thành Nadarét", "Thành Caphácnaum", "Thành Samaria"],
+    "a": 1
+  },
+  {
+    "s": 3,
+    "ref": "Lc 1,27",
+    "q": "Hôn phu của Đức Maria thuộc dòng dõi vua nào?",
+    "o": ["Vua Salem", "Vua Đavít", "Vua Hêrôđê", "Vua Pharaô"],
+    "a": 1
+  },
+  {
+    "s": 3,
+    "ref": "Lc 1,28",
+    "q": "Hoàn thành câu: “Mừng vui lên, hỡi Đấng đầy …, Đức Chúa ở cùng bà.”",
+    "o": ["Tốt lành", "Công chính", "Ân sủng", "Niềm vui"],
+    "a": 2
+  },
+  {
+    "s": 3,
+    "ref": "Lc 1,31",
+    "q": "Trinh nữ Maria sẽ sinh hạ một con trai, và đứa trẻ được đặt tên là gì?",
+    "o": ["Gioan", "Giêsu", "Samson", "Giôsuê"],
+    "a": 1
+  },
+  {
+    "s": 3,
+    "ref": "Lc 1,32",
+    "q": "Con trai của trinh nữ Maria sẽ nên cao cả và được gọi là gì?",
+    "o": ["Đấng Mêsia", "Con Đấng Tối Cao", "Ngôi Hai Thiên Chúa", "Hoàng Tử Hòa Bình"],
+    "a": 1
+  },
+  {
+    "s": 3,
+    "ref": "Lc 1,36",
+    "q": "Người chị họ của cô Maria tên là gì?",
+    "o": ["Êliseva", "Bátseva", "Êlisabét", "Anna"],
+    "a": 2
+  },
+  {
+    "s": 3,
+    "ref": "Lc 1,38",
+    "q": "“Vâng, tôi đây là nữ tỳ của Chúa, xin Chúa cứ làm cho tôi như lời sứ thần nói.” Đây là lời của ai?",
+    "o": ["Cô Mácta", "Cô Maria", "Cô Êlisabét", "Cô Anna"],
+    "a": 1
+  }
+]
