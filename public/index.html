@@ -1,0 +1,134 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Thắp sáng Mùa Vọng</title>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800;900&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<style>
+:root{--gold:#FFC83D;--c0:#D7263D;--c1:#1F6FEB;--c2:#17995F;--c3:#8B3DFF;--glass:rgba(255,255,255,.11);--mut:#D9D2F2}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{color:#fff;font:400 18px/1.4 "Be Vietnam Pro",system-ui,sans-serif;background:linear-gradient(135deg,#150a36,#3a1475 40%,#0e3b8c 75%,#150a36);background-size:300% 300%;animation:bg 24s ease infinite;padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0);overflow-x:hidden}
+@keyframes bg{50%{background-position:100% 100%}}
+#stars{position:fixed;inset:0;pointer-events:none;z-index:0}
+#stars i{position:absolute;width:3px;height:3px;border-radius:50%;background:#fff;animation:tw 3s ease-in-out infinite}
+@keyframes tw{50%{opacity:.15;transform:scale(.5)}}
+#cf{position:fixed;inset:0;pointer-events:none;z-index:50}
+#app{position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:22px;min-height:100vh;display:flex;flex-direction:column;gap:18px}
+#mu{position:fixed;top:calc(10px + env(safe-area-inset-top,0px));right:10px;z-index:60;min-height:44px;min-width:44px;border-radius:50%;background:var(--glass);color:#fff;border:0;font-size:20px;padding:0;backdrop-filter:blur(6px)}
+h1{margin:0;font-weight:900;line-height:1.05;font-size:clamp(34px,7vw,76px);background:linear-gradient(90deg,#fff,var(--gold) 60%,#ff9bd0);-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{margin:0;font-weight:800;line-height:1.22;font-size:clamp(22px,3.8vw,44px)}
+.k{color:var(--gold);font-weight:800;letter-spacing:.12em;font-size:14px;text-transform:uppercase}.m{color:var(--mut)}
+.glass{background:var(--glass);border:1px solid rgba(255,255,255,.18);border-radius:22px;padding:16px 22px;backdrop-filter:blur(8px)}
+button,input{font:800 20px "Be Vietnam Pro",sans-serif;min-height:56px;border-radius:16px}
+.btn{background:linear-gradient(180deg,#ffd75e,#ffb21e);color:#2a1450;border:0;padding:0 38px;cursor:pointer;box-shadow:0 6px 0 #b97800,0 12px 24px rgba(0,0,0,.35);transition:transform .08s}.btn:active{transform:translateY(4px);box-shadow:0 2px 0 #b97800}.btn:disabled{opacity:.5}
+.btn.g{background:var(--glass);color:#fff;box-shadow:none;border:1px solid rgba(255,255,255,.25);font-size:16px;min-height:48px;padding:0 20px}
+input{border:3px solid var(--gold);background:rgba(0,0,0,.3);color:#fff;padding:0 18px;width:100%;text-align:center}
+.pop{animation:pop .5s cubic-bezier(.2,1.6,.4,1) both}@keyframes pop{from{transform:scale(.6);opacity:0}}
+.float{animation:fl 3.2s ease-in-out infinite}@keyframes fl{50%{transform:translateY(-10px)}}
+.fl{animation:flk .5s ease-in-out infinite alternate}@keyframes flk{to{transform:scale(1.15,.9) rotate(3deg)}}
+.hero{display:flex;gap:34px;align-items:center;justify-content:center;flex-wrap:wrap;margin:auto 0}
+.hero>div{display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.tag{display:inline-flex;gap:8px;align-items:center;background:var(--glass);border-radius:99px;padding:6px 16px;font-weight:600;font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;max-height:150px;overflow:auto}.chips span{background:linear-gradient(135deg,#ffffff30,#ffffff12);padding:6px 16px;border-radius:99px;font-weight:600;animation:pop .4s both}
+#qr{background:#fff;padding:16px;border-radius:22px;box-shadow:0 0 0 6px var(--gold),0 0 60px rgba(255,200,61,.5)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.ring{position:relative;width:92px;height:92px;flex:none}.ring svg{transform:rotate(-90deg)}.ring circle{fill:none;stroke-width:9}.rb{stroke:rgba(255,255,255,.18)}.rf{stroke:var(--gold);stroke-linecap:round;transition:stroke-dashoffset .12s linear}
+.ring b{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:38px;font-weight:900}.ring.hot .rf{stroke:#ff4d6d}.ring.hot{animation:pulse .5s infinite alternate}@keyframes pulse{to{transform:scale(1.1)}}
+.qbox{background:var(--glass);border:1px solid rgba(255,255,255,.2);border-radius:26px;padding:clamp(16px,3vw,34px);text-align:center;animation:pop .5s both}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:700px){.grid{grid-template-columns:1fr}}
+.opt{display:flex;align-items:center;gap:14px;border:0;color:#fff;text-align:left;padding:14px 18px;min-height:clamp(76px,11vh,110px);border-radius:20px;font:700 clamp(17px,2.2vw,28px)/1.25 "Be Vietnam Pro",sans-serif;box-shadow:0 6px 0 rgba(0,0,0,.28);width:100%;animation:pop .5s both}
+button.opt{cursor:pointer}button.opt:active{transform:translateY(5px);box-shadow:0 1px 0 rgba(0,0,0,.28)}
+.opt b{flex:none;width:46px;height:46px;border-radius:14px;background:rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:24px}
+.o0{background:var(--c0)}.o1{background:var(--c1)}.o2{background:var(--c2)}.o3{background:var(--c3)}
+.opt.dim{opacity:.28;filter:grayscale(.6)}.opt.win{outline:5px solid #fff;box-shadow:0 0 50px rgba(255,255,255,.8);transform:scale(1.03)}
+.row{display:flex;align-items:center;gap:18px;font-weight:800;font-size:clamp(20px,3.2vw,34px);animation:pop .5s both}.row .n{flex:1}.row .md{font-size:1.4em}
+.pod{display:flex;align-items:flex-end;justify-content:center;gap:12px;margin-top:8px}.pod>div{flex:1;max-width:280px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:4px}
+.pod .st{width:100%;border-radius:20px 20px 0 0;display:flex;align-items:flex-start;justify-content:center;padding-top:10px;font-size:clamp(36px,6vw,64px);font-weight:900;color:#2a1450;animation:rise 1s cubic-bezier(.2,1.2,.4,1) both}
+@keyframes rise{from{height:0!important}}
+.pod .nm{font-weight:900;font-size:clamp(18px,3vw,32px);word-break:break-word}
+.big{font-size:clamp(70px,16vw,140px);line-height:1}
+.ctl{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:10px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head><body>
+<div id="stars" aria-hidden="true"></div><canvas id="cf" aria-hidden="true"></canvas>
+<button id="mu" aria-label="Bật hoặc tắt âm thanh">🔊</button>
+<div id="app"><div class="m">Đang kết nối…</div></div>
+<script>
+/* ---------- âm thanh (tạo bằng WebAudio, không cần file) ---------- */
+let AC=null,muted=false,mTimer=null;
+const ac=()=>{if(!AC){try{AC=new(window.AudioContext||window.webkitAudioContext)()}catch(e){}}if(AC&&AC.state==="suspended")AC.resume();return AC};
+function tone(f,t,d,type,vol,to){const a=AC;if(!a||muted)return;const o=a.createOscillator(),g=a.createGain(),n=a.currentTime+t;o.type=type||"sine";o.frequency.setValueAtTime(f,n);if(to)o.frequency.exponentialRampToValueAtTime(to,n+d);g.gain.setValueAtTime(.0001,n);g.gain.linearRampToValueAtTime(vol||.15,n+.01);g.gain.exponentialRampToValueAtTime(.0001,n+d);o.connect(g);g.connect(a.destination);o.start(n);o.stop(n+d+.05)}
+const S={pop:()=>tone(520,0,.12,"sine",.2,900),tap:()=>tone(440,0,.08,"triangle",.18),tick:()=>tone(1100,0,.06,"square",.07),
+ start:()=>[523,659,784,1047].forEach((f,i)=>tone(f,i*.08,.22,"triangle",.17)),
+ ok:()=>{tone(659,0,.12,"triangle",.2);tone(988,.1,.3,"triangle",.2)},bad:()=>tone(200,0,.4,"sawtooth",.13,90),
+ rev:()=>{tone(300,0,.35,"sine",.15,900)},win:()=>[523,659,784,1047,784,1047,1319,1568].forEach((f,i)=>tone(f,i*.13,.32,"triangle",.2))};
+function music(on){clearInterval(mTimer);mTimer=null;if(!on||muted)return;let i=0;const N=[262,330,392,523,392,330,294,370,440,587,440,370];mTimer=setInterval(()=>{tone(N[i%N.length],0,.2,"triangle",.045);if(i%4===0)tone(131,0,.35,"sine",.06);i++},240)}
+document.addEventListener("pointerdown",ac);
+document.getElementById("mu").onclick=e=>{ac();muted=!muted;e.target.textContent=muted?"🔇":"🔊";if(muted)music(false)};
+/* ---------- hiệu ứng ---------- */
+const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const st=document.getElementById("stars");for(let i=0;i<46;i++){const e=document.createElement("i");e.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*100}%;animation-delay:${Math.random()*3}s;transform:scale(${.5+Math.random()*1.4})`;st.appendChild(e)}
+const cv=document.getElementById("cf"),cx=cv.getContext("2d");let P=[],run=0;
+const fit=()=>{cv.width=innerWidth;cv.height=innerHeight};addEventListener("resize",fit);fit();
+function confetti(n){if(reduce)return;for(let i=0;i<n;i++)P.push({x:innerWidth/2+(Math.random()-.5)*innerWidth*.6,y:innerHeight*.35,vx:(Math.random()-.5)*14,vy:-Math.random()*13-3,r:5+Math.random()*7,c:`hsl(${Math.random()*360} 95% 60%)`,l:150+Math.random()*90});if(run)return;run=1;(function f(){cx.clearRect(0,0,cv.width,cv.height);P=P.filter(p=>p.l-->0);for(const p of P){p.vy+=.25;p.x+=p.vx;p.y+=p.vy;cx.fillStyle=p.c;cx.fillRect(p.x,p.y,p.r,p.r*1.6)}if(P.length)requestAnimationFrame(f);else{run=0;cx.clearRect(0,0,cv.width,cv.height)}})()}
+/* ---------- hình minh hoạ SVG ---------- */
+const wreath=(lit,w)=>{const col=["#9b5de5","#9b5de5","#ff8fb8","#9b5de5"];let l="";for(let i=0;i<16;i++){const a=i/16*6.283;l+=`<circle cx="${100+Math.cos(a)*84}" cy="${112+Math.sin(a)*26}" r="6" fill="${i%4?"#2fb868":"#ff4d6d"}"/>`}
+ return`<svg viewBox="0 0 200 150" width="${w}" role="img" aria-label="Vòng hoa Mùa Vọng, đã thắp ${lit} nến"><ellipse cx="100" cy="114" rx="90" ry="30" fill="#14703c"/><ellipse cx="100" cy="110" rx="80" ry="22" fill="#25a85a"/>${l}`+[40,80,120,160].map((x,i)=>`<rect x="${x-9}" y="64" width="18" height="48" rx="4" fill="${col[i]}"/>${i<lit?`<g class="fl" style="transform-origin:${x}px 62px"><circle cx="${x}" cy="48" r="16" fill="#ffc83d" opacity=".3"/><path d="M${x} 32 q11 15 0 28 q-11 -13 0 -28z" fill="#ffc83d"/><path d="M${x} 44 q5 9 0 16 q-5 -7 0 -16z" fill="#fff6c9"/></g>`:""}`).join("")+`</svg>`};
+const star=w=>`<svg class="float" viewBox="0 0 100 100" width="${w}" aria-hidden="true"><defs><radialGradient id="gl"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#ffc83d" stop-opacity="0"/></radialGradient></defs><circle cx="50" cy="50" r="48" fill="url(#gl)"/><path d="M50 4 58 38 96 50 58 62 50 96 42 62 4 50 42 38Z" fill="#ffd75e"/><path d="M50 22 54 44 78 50 54 56 50 78 46 56 22 50 46 44Z" fill="#fff"/></svg>`;
+/* ---------- trạng thái ---------- */
+const L="ABCD",SUN=["Chúa nhật I · Tỉnh thức","Chúa nhật II · Dọn đường","Chúa nhật III · Làm chứng","Chúa nhật IV · Truyền tin"],MED=["🥇","🥈","🥉"],PC=["#ffd75e","#d7dbe8","#e4a36a"];
+const app=document.getElementById("app"),host=location.pathname==="/host";
+let v=null,off=0,key=sessionStorage.getItem("gk")||"",id=localStorage.getItem("gid"),lastKey="",lastSec=99;
+if(!id){id=crypto.randomUUID?crypto.randomUUID():String(Math.random()).slice(2)+Date.now();localStorage.setItem("gid",id)}
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const leftMs=()=>v?Math.max(0,v.t0+v.time-(Date.now()+off)):0;
+const post=(u,b)=>fetch(u,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(b)});
+const act=a=>post("/api/host",{key,action:a});
+window.act=act;window.join=()=>{const n=document.getElementById("nm").value.trim();if(n){S.pop();post("/api/join",{id,name:n})}};
+window.pick=c=>{S.tap();post("/api/answer",{id,c})};
+const ring=()=>`<div class="ring" id="rg"><svg viewBox="0 0 100 100"><circle class="rb" cx="50" cy="50" r="44"/><circle id="rf" class="rf" cx="50" cy="50" r="44" stroke-dasharray="276.5" stroke-dashoffset="0"/></svg><b id="tm">${Math.ceil(leftMs()/1000)}</b></div>`;
+const chip=q=>`<span class="tag">🕯️ ${SUN[q.s]} · ${esc(q.ref)}</span>`;
+const opts=(q,sel,win,btn)=>`<div class="grid">${q.o.map((t,i)=>`<${btn?"button":"div"} class="opt o${i}${win!=null?(i===win?" win":" dim"):""}${sel===i?" win":""}" style="animation-delay:${i*.07}s" ${btn?`onclick="pick(${i})"`:""}><b>${L[i]}</b><span>${esc(t)}</span></${btn?"button":"div"}>`).join("")}</div>`;
+const top3=r=>(r||[]).map((p,i)=>`<div class="glass row" style="animation-delay:${i*.15}s"><span class="md">${MED[i]}</span><span class="n">${esc(p.name)}</span><span style="color:var(--gold)">${p.s}</span></div>`).join("")||'<div class="m">Chưa có người chơi.</div>';
+const podium=r=>{const o=[1,0,2].filter(i=>r[i]),h=[210,290,150];return`<div class="pod">${o.map(i=>`<div>${i===0?'<div class="big float" style="font-size:64px">👑</div>':""}<div class="nm">${esc(r[i].name)}</div><div class="m">${r[i].s} điểm</div><div class="st" style="height:${h[i]}px;background:linear-gradient(180deg,${PC[i]},${PC[i]}aa);animation-delay:${i===0?.9:i===1?.4:.1}s">${i+1}</div></div>`).join("")}</div>`};
+/* ---------- giao diện ---------- */
+function render(){
+ if(!v)return;const ae=document.activeElement;if(ae&&ae.tagName==="INPUT"){lastKey="";return}
+ const me=v.me,q=v.question;let h="";
+ if(host){
+  if(v.phase==="lobby")h=`<div class="hero"><div>${star(96)}<span class="k">Đấu trường Lời Chúa · Năm B</span><h1>Thắp sáng<br>Mùa Vọng</h1><span class="tag">⏱️ 30 câu · 10 giây mỗi câu</span>${wreath(0,200)}<div class="m" style="font-size:20px">1. Quét mã QR &nbsp; 2. Nhập tên &nbsp; 3. Chờ khai cuộc</div></div><div style="display:flex;flex-direction:column;gap:16px;align-items:center"><div id="qr"></div><div class="m">${esc(location.origin)}/</div><div class="glass" style="min-width:min(380px,90vw)"><div class="k">Đã vào phòng: ${v.count}</div><div class="chips">${v.names.map(n=>`<span>${esc(n)}</span>`).join("")}</div></div><button class="btn" ${v.count?"":"disabled"} onclick="ac();act('start')">BẮT ĐẦU 🚀</button></div></div>`;
+  else if(v.phase==="question")h=`<div class="bar">${wreath(q.s+1,110)}<div style="flex:1;min-width:200px;display:flex;flex-direction:column;gap:8px;align-items:flex-start">${chip(q)}<span class="m">Câu <b style="color:#fff">${v.q+1}</b>/${v.total} · Đã trả lời <b id="ac" style="color:var(--gold)">${v.answered}/${v.count}</b></span></div>${ring()}</div><div class="qbox"><h2>${esc(q.q)}</h2></div>${opts(q)}`;
+  else if(v.phase==="reveal"){const last=v.q===v.total-1;h=`<div class="bar">${chip(q)}<span class="m">Sau câu ${v.q+1}/${v.total}</span></div><div class="qbox"><div class="k">Đáp án đúng</div><h2>${L[v.correct]}. ${esc(q.o[v.correct])}</h2></div><div class="k">Top 3 dẫn đầu</div>${top3(v.top)}<div style="text-align:right"><button class="btn" onclick="act('${last?"final":"next"}')">${last?"VINH DANH 🏆":"CÂU TIẾP THEO ➜"}</button></div>`}
+  else h=`<div style="text-align:center;display:flex;flex-direction:column;gap:12px;margin:auto 0"><div class="k">Kết thúc 30/30 câu</div><h1>Vinh danh<br>người chiến thắng</h1>${podium(v.top)}${wreath(4,170).replace("<svg",'<svg style="margin:0 auto"')}<div class="m">Chúc mừng tất cả! Chúa đến, hãy luôn tỉnh thức 🕯️</div></div>`;
+  h+=`<div class="ctl"><button class="btn g" onclick="if(confirm('Làm lại từ đầu? Điểm về 0, giữ nguyên người chơi.'))act('restart')">↺ Làm lại từ đầu</button><button class="btn g" onclick="if(confirm('Xoá toàn bộ người chơi và ván mới?'))act('reset')">🗑 Xoá người chơi</button></div>`;
+ }else{
+  if(!me)h=`<div class="hero" style="flex-direction:column;gap:18px;text-align:center">${star(90)}<span class="k">Đấu trường Lời Chúa</span><h1 style="font-size:clamp(38px,12vw,64px)">Thắp sáng<br>Mùa Vọng</h1><label class="m" for="nm">Nhập tên của bạn để vào chơi</label><input id="nm" maxlength="20" placeholder="Tên của bạn" autocomplete="off"><button class="btn" style="width:100%" onclick="join()">VÀO CHƠI 🔥</button></div>`;
+  else if(v.phase==="lobby")h=`<div class="hero" style="flex-direction:column;text-align:center;gap:14px">${wreath(0,220)}<h2>Chào ${esc(me.name)}! 🎉</h2><div class="m">Bạn đã vào phòng. Chờ quản trò khai cuộc nhé…</div></div>`;
+  else if(v.phase==="question")h=`<div class="bar"><span class="tag">${esc(me.name)} · ${me.score} đ${me.streak>1?` · 🔥${me.streak}`:""}</span>${ring().replace('width:92px','')}</div><span class="m">Câu ${v.q+1}/${v.total}</span>${me.choice!=null?"":`<h2 style="font-size:clamp(20px,5vw,28px)">${esc(q.q)}</h2>`}${me.choice!=null?`<div class="hero" style="flex-direction:column;text-align:center;gap:10px"><div class="big pop">🔒</div><h2>Đã chốt đáp án ${L[me.choice]}!</h2><div class="m">Chờ kết quả…</div></div>`:opts(q,null,null,true)}`;
+  else if(v.phase==="reveal"){const g=me.gain;h=`<div class="hero" style="flex-direction:column;text-align:center;gap:12px"><div class="big pop">${me.choice==null?"⏰":g?"✅":"❌"}</div><h2 style="color:${g?"#7dffb0":"#ff8aa0"}">${me.choice==null?"Hết giờ rồi!":g?"Chính xác! +"+g:"Tiếc quá!"}</h2><div class="m">Đáp án: <b style="color:#fff">${L[v.correct]}. ${esc(q.o[v.correct])}</b></div>${me.streak>1?`<span class="tag">🔥 Chuỗi ${me.streak} câu đúng</span>`:""}<div class="glass" style="min-width:230px"><div class="k">Hạng của bạn</div><div class="big" style="font-size:64px">#${me.rank}<span class="m" style="font-size:20px">/${v.count}</span></div><div style="color:var(--gold);font-weight:800">${me.score} điểm</div></div></div>${top3(v.top)}`}
+  else h=`<div class="hero" style="flex-direction:column;text-align:center;gap:12px"><div class="k">Kết thúc</div><div class="big pop">${me.rank<=3?MED[me.rank-1]:"🎯"}</div><h1 style="font-size:clamp(34px,10vw,60px)">Bạn hạng ${me.rank}/${v.count}</h1><div style="color:var(--gold);font-weight:800;font-size:24px">${me.score} điểm</div></div>${podium(v.top)}`;
+ }
+ app.innerHTML=h;
+ if(host&&v.phase==="lobby"&&window.QRCode)new QRCode(document.getElementById("qr"),{text:location.origin+"/",width:250,height:250});
+}
+function events(p,n){
+ if(!p)return;
+ if(n.phase==="question"&&(p.phase!=="question"||p.q!==n.q)){lastSec=99;if(host){S.start();music(true)}}
+ if(p.phase==="question"&&n.phase==="reveal"){music(false);if(host)S.rev();else if(n.me){if(n.me.gain){S.ok();confetti(50)}else S.bad()}}
+ if(n.phase==="final"&&p.phase!=="final"){music(false);S.win();confetti(260)}
+ if(host&&n.phase==="lobby"&&p.phase==="lobby"&&n.count>p.count)S.pop();
+}
+function connect(){
+ const es=new EventSource("/events?id="+encodeURIComponent(id)+(host?"&key="+encodeURIComponent(key):""));
+ es.onmessage=e=>{const n=JSON.parse(e.data),p=v;v=n;off=n.now-Date.now();events(p,n);
+  const k=[v.phase,v.q,v.me?1:0,v.me&&v.me.choice,v.phase==="lobby"&&host?v.names.join("|"):""].join("#");
+  if(k!==lastKey){lastKey=k;render()}else{const a=document.getElementById("ac");if(a)a.textContent=v.answered+"/"+v.count}};
+}
+async function login(){
+ if(key){const r=await act("ping");if(r.ok){connect();return}}
+ app.innerHTML=`<div class="hero" style="flex-direction:column;gap:14px;text-align:center">${star(80)}<h2>Quản trò đăng nhập</h2><input id="pw" type="password" aria-label="Mật khẩu quản trò" style="max-width:340px"><button class="btn" id="go">VÀO</button>${key?'<div style="color:#ff8aa0">Mật khẩu chưa đúng.</div>':""}</div>`;
+ document.getElementById("go").onclick=()=>{ac();key=document.getElementById("pw").value;sessionStorage.setItem("gk",key);login()};
+}
+setInterval(()=>{if(!v||v.phase!=="question")return;const ms=leftMs(),s=Math.ceil(ms/1000),t=document.getElementById("tm"),f=document.getElementById("rf"),r=document.getElementById("rg");
+ if(t)t.textContent=s;if(f)f.style.strokeDashoffset=276.5*(1-ms/v.time);if(r)r.classList.toggle("hot",s<=3);
+ if(s!==lastSec){lastSec=s;if(host&&s>0&&s<=3)S.tick()}},100);
+host?login():connect();
+</script></body></html>
